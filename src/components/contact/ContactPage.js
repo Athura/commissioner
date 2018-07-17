@@ -6,7 +6,7 @@ const ContactPage = () => {
   return (
     <div>
     <NavBar />
-      <StyledParallax marston>
+      <StyledParallax marston fullscreen>
             <StyledParallaxText contact>
                 Together We Can 
             </StyledParallaxText>

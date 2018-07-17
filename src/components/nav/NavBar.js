@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { NavbarIcon, NavbarLogo, NavbarNav, NavbarUl, NavbarA, NavbarLi } from './_navbar';
+import { NavbarIcon, NavbarLogo, NavbarNav, NavbarUl, NavbarA, NavbarLi, NavbarLink } from './_navbar';
+
+import { NavLink } from 'react-router-dom';
 
 class NavBar extends Component  {
     state = {
@@ -27,10 +29,10 @@ class NavBar extends Component  {
                     </NavbarLogo>
                     <div>
                         <NavbarUl>
-                            <NavbarLi><NavbarA href="#">Home</NavbarA></NavbarLi>
-                            <NavbarLi><NavbarA href="#">About</NavbarA></NavbarLi>
-                            <NavbarLi><NavbarA href="#">Issues</NavbarA></NavbarLi>
-                            <NavbarLi><NavbarA href="#">Contact Me</NavbarA></NavbarLi>
+                            <NavbarLi><NavbarLink to="/" >Home</NavbarLink></NavbarLi>
+                            <NavbarLi><NavbarA to="/" >About</NavbarA></NavbarLi>
+                            <NavbarLi><NavbarA to="/" >Issues</NavbarA></NavbarLi>
+                            <NavbarLi ><NavbarLink  to="/contact">Contact Me</NavbarLink></NavbarLi>
                         </NavbarUl>
                     </div>
                 </NavbarNav>

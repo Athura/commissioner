@@ -7,7 +7,7 @@ class Body extends Component {
   render() {
     return (
       <div>
-        <StyledParallax mountairy>
+        <StyledParallax mountairy minheight>
             <StyledParallaxText transparent>
                 Mount Airy
             </StyledParallaxText>
@@ -25,7 +25,7 @@ class Body extends Component {
             </p>
         </StyledSection>
 
-        <StyledParallax newwindsor>
+        <StyledParallax newwindsor minheight>
             <StyledParallaxText transparent>
                 New Windsor
             </StyledParallaxText>

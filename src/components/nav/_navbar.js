@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { generator } from 'uigradients';
+import { Link } from 'react-router-dom';
 import typography from '../../styles/_typography';
 import media from '../../styles/_media';
 // theme gives access to colors which is why we don't import that file.
@@ -68,6 +69,23 @@ export const NavbarLi = styled.li`
 `;
 
 export const NavbarA = styled.a`
+    line-height: 80px;
+    color: ${theme.white};
+    padding: 12px 30px;
+    text-transform: uppercase;
+    transition: .7s;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    &:hover {
+        border-bottom: 2px solid ${theme.black};
+    }
+`;
+
+// https://spectrum.chat/thread/d6db6242-eb99-4f96-b14f-194593188c93 -- shows how to handle react router in a navlink
+
+export const NavbarLink = NavbarA.withComponent(Link).extend`
     line-height: 80px;
     color: ${theme.white};
     padding: 12px 30px;

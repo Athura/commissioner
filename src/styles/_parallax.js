@@ -41,12 +41,13 @@ export const StyledParallax = styled.div`
 
 export const StyledParallaxText = styled.div`
     position: absolute;
-    top: 10%;
-    margin-left: 20px;
+    top: 70%;
+    margin-left: 80px;
     width: 100%;
     text-align: left;
     text-transform: uppercase;
-    font-size: 60px;
+    font-style: ${typography.main};
+    font-size: 40px;
     letter-spacing: 8px;
 
     color: ${theme.white};
@@ -59,5 +60,9 @@ export const StyledParallaxText = styled.div`
         padding: 60px;
         left: -60px;
         text-align: center;
+    `};
+
+    ${props => props.movedown && css`
+        top: '100px';
     `};
 `;

@@ -11,24 +11,25 @@ export const StyledCampaignText = styled.p`
 
     ${props => props.main && css`
         position: absolute;
-        top: 100px; 
+        top: 200px; 
         font-size: 80px;
+        margin-left: 80px;
     `};
 
     ${props => props.secondary && css`
         position: absolute; 
         font-size: 40px;
-        margin-left: 20px;
+        margin-left: 85px;
         color: ${theme.white};
         font-weight: 600px;
     `}; 
 
     ${props => props.middle && css`
-        top: 300px;
+        top: 350px;
     `};
 
-    ${props => props.location && css`
-        top: 225px;
+    ${props => props.bottom && css`
+        top: 400px;
     `};
 `;
 

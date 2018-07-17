@@ -1,20 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { StyledParallax, StyledParallaxText } from '../../styles/_parallax';
 import { StyledSection, StyledHeader } from '../../styles/_sections';
 import { StyledCampaignText } from './_header';
 
+import TextLoop from 'react-text-loop';
+
 const Header = () => {
   return (
       <div>
-    <StyledParallax primary>
-      <StyledParallaxText light>
+    <StyledParallax primary fullscreen>
         <StyledCampaignText main>
             Paul Johnson
         </StyledCampaignText>
+      <StyledParallaxText movedown>
+          <h2 css={{ marginTop: 600 }} >
+            <TextLoop speed={4000} springConfig={{ stiffness: 180, damping: 8 }} css={{ fontSize: '200px' }}>
+                <span>Fiscally Prudent</span>
+                <span>Socially Responsible</span>
+            </TextLoop>
+          </h2>
+        </StyledParallaxText>
+    </StyledParallax>
         <StyledCampaignText secondary middle>For Carroll County Commissioner</StyledCampaignText>
-        <StyledCampaignText secondary location>District 4</StyledCampaignText>
-      </StyledParallaxText>
-      </StyledParallax>
+        <StyledCampaignText secondary bottom>District 4</StyledCampaignText>
+      
+      
 
       <StyledSection light>
         <StyledHeader>Paul's Vision</StyledHeader>
@@ -29,6 +40,11 @@ const Header = () => {
       </StyledSection>
     </div>
   )
-}
+};
+
+let styles = {
+    top: '100px', 
+    fontSize: '200px'
+};
 
 export default Header;
