@@ -4,65 +4,86 @@ import media from '../../styles/_media';
 // theme gives access to colors which is why we don't import that file.
 import theme from '../../styles/_theme';
 
-export const StyledFooter = styled.footer`
-    background-color: ${theme.black};
-    padding: 10rem 0;
-    font-size: 1.4rem;
-    color: ${theme.lightblue};
-`;
+export const StyledFooter = styled.div`
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 999;
 
-export const StyledLogoBox = styled.div`
-    text-align: center;
-    margin-bottom: 2rem;
-`;
-
-export const StyledLogoPicture = styled.picture`
-    width: 15rem;
-    height: auto;
-`;
-
-export const StyledFooterNav = styled.div`
-    border-top: 1px solid ${theme.lightblue};
-    padding: 2rem;
-    width: 80%;
-`;
-
-export const StyledFooterUl = styled.ul`
-    list-style: none;
-`;
-
-export const StyledFooterItem = styled.li`
-    display: inline-block;
-    margin-right: 1.5rem;
-`;
-
-export const StyledFooterLink = styled.a`
-    &:visited {
-        color: ${theme.white};
-        background-color: ${theme.blue};
-        text-decoration: none;
-        text-transform: uppercase;
-        display: inline-block;
-        transition: all .2s;
-    }
-
-    &:hover,
-    &:active {
-        color: ${theme.lightblue};
-        box-shadow: 0 1rem 2rem ${theme.darkgrey};
-        transform: rotate(5deg) scale(1.3);
+    &:hover {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+	    height: 10em;
     }
 `;
 
-export const StyledFooterCopyright = styled.p`
-    border-top: 1px solid ${theme.darkgrey};
-    padding: 2rem;
-    width: 80%;
-    float: right;
+export const StyledButton = styled.div`
+    width:35px;
+    height:35px;
+    border: #727172 12px solid;
+    border-radius:35px;
+    margin:0 auto;
+    position:relative;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
+    &:hover {
+        width:35px;
+        height:35px;
+        border: #3A3A3A 12px solid;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        position:relative;
+    }
 `;
 
-export const StyledFooterRow = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+export const StyledFooterContainer = styled.div`
+    margin-top:5px;
+    width:100%;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
+    background: ${theme.darkgrey};
+`;
+
+export const StyledFooterCont = styled.div`
+    position:relative;
+    top:-45px;
+    right:190px;
+    width:150px;
+    height:auto;
+    margin:0 auto;
+`;
+
+export const StyledFooterCenter = styled.div`
+    width:500px;
+    float:left;
+    text-align:center;
+`;
+
+export const StyledFooterHeader = styled.h3`
+    font-family: 'Helvetica';
+    font-size: 30px;
+    font-weight: 100;
+    margin-top:70px;
+    margin-left:40px;
 `;
