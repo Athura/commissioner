@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { NavbarIcon, NavbarLogo, NavbarNav, NavbarUl, NavbarA, NavbarLi, NavbarLink } from './_navbar';
-
-import { NavLink } from 'react-router-dom';
+import { NavbarLogo, NavbarNav, NavbarUl, NavbarA, NavbarLi, NavbarLink } from './_navbar';
 
 class NavBar extends Component  {
     state = {
@@ -24,7 +22,7 @@ class NavBar extends Component  {
         <div>
             <header>
                 <NavbarNav>
-                    <NavbarLogo>
+                    <NavbarLogo moveInTop>
                         Citizens for Paul Johnson
                     </NavbarLogo>
                     <div>

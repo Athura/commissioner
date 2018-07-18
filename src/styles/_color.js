@@ -10,7 +10,9 @@ const colors = {
     darkgrey: '#3C3D4F',
     lightblue: '#0AB8FF',
     white: '#FFF',
-    black: '#000000'
+    black: '#000000',
+    maroon: '#800000',
+    navy: '#00005A'
 };
 
 export default colors;

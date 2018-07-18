@@ -1,10 +1,8 @@
 import styled, { css } from 'styled-components';
-import { generator } from 'uigradients';
 import { Link } from 'react-router-dom';
-import typography from '../../styles/_typography';
-import media from '../../styles/_media';
 // theme gives access to colors which is why we don't import that file.
 import theme from '../../styles/_theme';
+import { moveInTop } from '../../styles/_animations';
 
 export const NavbarIcon = styled.div`
     width: 100%;
@@ -17,14 +15,18 @@ export const NavbarIcon = styled.div`
 `;
 
 export const NavbarLogo = styled.div`
-    padding: 20px 20px; 
-    height: 20px;
+    padding: 40px 20px; 
+    height: 10px;
     float: left; 
-    font-size: 24px;
+    font-size: 30px;
     transition: .3s;
     color: ${theme.white}
 
     text-transform: uppercase
+
+    ${props => props.moveInTop && css`
+        animation: ${moveInTop} 2s;
+    `};
 `;
 
 export const NavbarNav = styled.nav`
@@ -38,16 +40,7 @@ export const NavbarNav = styled.nav`
     transition: .3s;
     align-self: center;
 
-    ${generator({
-        gradient: 'aqualicious',
-        type: 'radial',
-        options: {
-            position: '45px 20px',
-            shape: 'ellipse',
-            colorStops: ['20%', '50%'],
-            extent: 'farthest-corner'
-        }
-    })};
+    background: linear-gradient(135deg, orange, orange 50%, cyan);
 `;
 
 export const NavbarUl = styled.ul`

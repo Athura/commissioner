@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledParallax, StyledParallaxText } from '../../styles/_parallax';
 import NavBar from '../nav/NavBar';
+import Footer from '../footer/Footer';
 
 const ContactPage = () => {
   return (
@@ -11,6 +12,7 @@ const ContactPage = () => {
                 Together We Can 
             </StyledParallaxText>
         </StyledParallax>
+        <Footer />
     </div>
   )
 }

@@ -1,8 +1,7 @@
 import styled, { css } from 'styled-components';
-import typography from '../../styles/_typography';
-import media from '../../styles/_media';
 // theme gives access to colors which is why we don't import that file.
 import theme from '../../styles/_theme';
+import { moveInRight, moveInLeft } from '../../styles/_animations';
 
 export const StyledCampaignText = styled.p`
     color: ${theme.white};
@@ -30,6 +29,16 @@ export const StyledCampaignText = styled.p`
 
     ${props => props.bottom && css`
         top: 400px;
+    `};
+
+    ${props => props.moveInLeft && css`
+        animation-delay: 2s;
+        animation: ${moveInLeft} 2s;
+    `};
+
+    ${props => props.moveInRight && css`
+        animation-delay: 2s;
+        animation: ${moveInRight} 2s;
     `};
 `;
 

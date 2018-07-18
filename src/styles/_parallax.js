@@ -1,9 +1,8 @@
 import styled, { css } from 'styled-components';
-import { generator } from 'uigradients';
 import typography from './_typography';
-import media from './_media';
 // theme gives access to colors which is why we don't import that file.
 import theme from './_theme';
+import { moveInBottom } from './_animations';
 
 export const StyledParallax = styled.div`
     position: relative;
@@ -49,6 +48,8 @@ export const StyledParallaxText = styled.div`
     font-style: ${typography.main};
     font-size: 40px;
     letter-spacing: 8px;
+
+    animation: ${moveInBottom} 2s;
 
     color: ${theme.white};
 

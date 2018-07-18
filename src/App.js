@@ -4,6 +4,7 @@ import {  injectGlobal } from 'styled-components';
 
 import MainPage from './components/mainpage/MainPage';
 import ContactPage from './components/contact/ContactPage';
+import ErrorBoundary from './components/errorboundry/ErrorBoundary';
 
 injectGlobal`
   body, html {
@@ -22,7 +23,7 @@ class App extends Component {
   render() {
     return (
       <div>
-
+        <ErrorBoundary>
         <Switch>
           <Route exact path="/" component = { MainPage } />
         </Switch>
@@ -37,7 +38,7 @@ class App extends Component {
             </div>
           )}
         />
-        
+        </ErrorBoundary>
         
       </div>
     );

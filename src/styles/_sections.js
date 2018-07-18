@@ -1,6 +1,4 @@
 import styled, { css } from 'styled-components';
-import typography from './_typography';
-import media from './_media';
 // theme gives access to colors which is why we don't import that file.
 import theme from './_theme';
 

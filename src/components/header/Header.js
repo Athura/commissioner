@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { StyledParallax, StyledParallaxText } from '../../styles/_parallax';
 import { StyledSection, StyledHeader } from '../../styles/_sections';
 import { StyledCampaignText } from './_header';
@@ -22,8 +21,8 @@ const Header = () => {
           </h2>
         </StyledParallaxText>
     </StyledParallax>
-        <StyledCampaignText secondary middle>For Carroll County Commissioner</StyledCampaignText>
-        <StyledCampaignText secondary bottom>District 4</StyledCampaignText>
+        <StyledCampaignText secondary middle moveInRight>For Carroll County Commissioner</StyledCampaignText>
+        <StyledCampaignText secondary bottom moveInLeft>District 4</StyledCampaignText>
       
       
 
@@ -40,11 +39,6 @@ const Header = () => {
       </StyledSection>
     </div>
   )
-};
-
-let styles = {
-    top: '100px', 
-    fontSize: '200px'
 };
 
 export default Header;
