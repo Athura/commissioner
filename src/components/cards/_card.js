@@ -4,28 +4,33 @@ import media from '../../styles/_media';
 // theme gives access to colors which is why we don't import that file.
 import theme from '../../styles/_theme';
 
-    // gridwidth: '114rem',
-    // guttervertical: '8rem',
-    // gutterverticalsmall: '6rem',
-    // gutterhorizontal: '6rem'
+export const ClassCentered = styled.div`
 
-export const StyledRow = styled.div`
-    max-width: 114rem;
-    margin: 0 auto;
+`;
 
-    &:not(:last-child) {
-        margin-bottom: 8rem;
-    }
+export const StyledCards = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`;
 
-    [class^="col-"] {
-        float: left;
+export const StyledCard = styled.div`
+    background: ${theme.white};
+    margin-bottom: 2em;
 
-        &:not(:last-child) {
-            margin-right: 6rem;
-        }
+    flex: 0 1 24%;
+
+    transition: transform 1s;
+    border-radius: 3px;
+    box-shadow: 0 .5rem 4rem ${theme.black};
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
     }
 `;
 
-export const col1of4 = styled.div`
-    width: calc((100% - 3 *))
+export const StyledHeaderTertiary = styled.h3`
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-weight: 700px;
 `;

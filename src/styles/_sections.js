@@ -30,4 +30,8 @@ export const StyledHeader = styled.h2`
         left: 45%;
         border-bottom: 2px solid ${theme.lightblue};
     }
+
+    ${props => props.card && css`
+        margin-bottom: 2em;    
+    `}
 `;
