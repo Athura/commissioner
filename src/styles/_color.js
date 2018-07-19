@@ -12,7 +12,10 @@ const colors = {
     white: '#FFF',
     black: '#000000',
     maroon: '#800000',
-    navy: '#00005A'
+    navy: '#00005A',
+    campaignNavy: '#000066',
+    salmon: '#FFA07A',
+    campaignSalmon: '#ff692e'
 };
 
 export default colors;

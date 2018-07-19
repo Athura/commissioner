@@ -15,7 +15,7 @@ export const NavbarIcon = styled.div`
 `;
 
 export const NavbarLogo = styled.div`
-    padding: 40px 20px; 
+    padding: 25px 20px; 
     height: 10px;
     float: left; 
     font-size: 30px;
@@ -35,12 +35,12 @@ export const NavbarNav = styled.nav`
     width: 100%;
     top: 0;
     left: 0;
-    padding: 0px 100px;
+    padding: 10px;
     box-sizing: border-box;
     transition: .3s;
     align-self: center;
 
-    background: linear-gradient(135deg, orange, orange 50%, cyan);
+    background: linear-gradient(135deg, ${theme.darkgrey} 63%, ${theme.campaignSalmon});
 `;
 
 export const NavbarUl = styled.ul`
@@ -58,7 +58,6 @@ export const NavbarUl = styled.ul`
 export const NavbarLi = styled.li`
     list-style: none;
     display: inline-block;
-    padding: 20px;
 `;
 
 export const NavbarA = styled.a`

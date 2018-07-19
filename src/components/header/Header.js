@@ -14,7 +14,7 @@ const Header = () => {
         </StyledCampaignText>
       <StyledParallaxText movedown>
           <h2 css={{ marginTop: 600 }} >
-            <TextLoop speed={4000} springConfig={{ stiffness: 180, damping: 8 }} css={{ fontSize: '200px' }}>
+            <TextLoop speed={4000} springConfig={{ stiffness: 180, damping: 8 }}>
                 <span>Fiscally Prudent</span>
                 <span>Socially Responsible</span>
             </TextLoop>
