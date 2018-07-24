@@ -40,7 +40,7 @@ export const StyledParallax = styled.div`
 
 export const StyledParallaxText = styled.div`
     position: absolute;
-    top: 70%;
+    
     margin-left: 80px;
     width: 100%;
     text-align: left;
@@ -49,9 +49,13 @@ export const StyledParallaxText = styled.div`
     font-size: 40px;
     letter-spacing: 8px;
 
-    animation: ${moveInBottom} 2s;
+    
 
     color: ${theme.white};
+
+    ${props => props.animation && css`
+        animation: ${moveInBottom} 2s;
+    `};
 
     ${props => props.transparent && css`
         background-color: transparent;
@@ -59,11 +63,16 @@ export const StyledParallaxText = styled.div`
 
     ${props => props.contact && css`
         padding: 60px;
-        left: -60px;
+        left: -120px;
         text-align: center;
+        top: 10%;
     `};
 
     ${props => props.movedown && css`
         top: '100px';
+    `};
+
+    ${props => props.type && css`
+        top: 70%;
     `};
 `;

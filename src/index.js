@@ -11,7 +11,7 @@ const rootEl = document.getElementById('root');
 
 let render = () => {
     ReactDOM.render(
-        <ThemeProvider theme={ colors }>
+        <ThemeProvider theme={colors}>
             <BrowserRouter>
                 <App />
             </BrowserRouter> 

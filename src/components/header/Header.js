@@ -12,7 +12,7 @@ const Header = () => {
         <StyledCampaignText main>
             Paul Johnson
         </StyledCampaignText>
-      <StyledParallaxText movedown>
+      <StyledParallaxText movedown type animation>
           <h2 css={{ marginTop: 600 }} >
             <TextLoop speed={4000} springConfig={{ stiffness: 180, damping: 8 }}>
                 <span>Fiscally Prudent</span>
